@@ -1,0 +1,13 @@
+# Ignore Chrome config and cache
+chrome-config/
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.swp
