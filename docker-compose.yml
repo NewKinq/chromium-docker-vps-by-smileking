@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  chromium:
+    image: kasmweb/chrome:1.14.0
+    container_name: chromium-vps
+    restart: unless-stopped
+    shm_size: "2g"
+    ports:
+      - "6901:6901"
+    environment:
+      - VNC_PW=${VNC_PW}
+      - KASM_SSL=false
+    volumes:
+      - ./chrome-config:/home/kasm-user/.config/google-chrome
